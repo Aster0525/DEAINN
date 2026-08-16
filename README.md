@@ -46,8 +46,5 @@ Results are written under `results/` by default:
 - `axioms_<scenario>_<N>.csv`: observation-level monotonicity, concavity, and envelopment diagnostics.
 - `checkpoints/`: fitted PyTorch model checkpoints.
 
-No random seed is set by default, so Monte Carlo repetitions and separate executions draw fresh inputs, inefficiency terms, and model initializations. For an exactly repeatable run, pass a seed such as `--seed 42`; deterministic PyTorch settings are enabled only when a seed is supplied.
 
-## Method notes
 
-Training minimizes mean squared error plus penalties for monotonicity, concavity, and the minimal-extrapolation/envelopment condition. The reproduction defaults are penalty weights 150/150/30, hidden layers 64/32, and Sigmoid activation. Observed output contains one-sided technical inefficiency only, `y_observed = y_true - u`, where `u = |N(0, 0.4)|`; there is no symmetric noise term `v`.
