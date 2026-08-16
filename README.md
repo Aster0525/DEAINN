@@ -46,5 +46,14 @@ Results are written under `results/` by default:
 - `axioms_<scenario>_<N>.csv`: observation-level monotonicity, concavity, and envelopment diagnostics.
 - `checkpoints/`: fitted PyTorch model checkpoints.
 
+## Cite
+@article{CHEN2026,
+title = {A data envelopment analysis-informed neural network for production frontier estimation with soft regularization of production axioms},
+journal = {Computers \& Operations Research},
+pages = {107636},
+year = {2026},
+issn = {0305-0548},
+doi = {10.1016/j.cor.2026.107636},
+author = {Xingyue Chen and Min Yang and Zixuan Wang and Liang Liang}}
 
 
